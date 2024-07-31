@@ -11,12 +11,12 @@ form.addEventListener('submit', async (e) => {
     const message = document.getElementById('message').value;
 
     try {
-        const response = await emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", {
+        const response = await emailjs.send("service_cpbkelb", "template_s6h1azk", {
             username,
             email,
             phone,
             message
-        }, "YOUR_USER_ID");
+        }, "Tsmi7J7tz2o_Beo4q");
 
         if (response.status === 200) {
             responseMessage.innerText = 'Message sent successfully!';
