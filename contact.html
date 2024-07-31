@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melalew Mengistu</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="icon" href="My.jpg">
+</head>
+<body>
+    <div class="top">
+        <h1>Melalew Mengistu</h1>
+
+        <form class="form">
+            <a href="index.html">HOME</a>
+            <a href="contact.html">CONTACT</a>
+            <a href="gallery.html">GALLERY</a>
+            <a href="account.html">ACCOUNT</a>
+        </form>
+    </div>
+    
+    <div class="main">
+        <center>
+            <h1>Frequently Asked Questions</h1>
+            <hr>
+            <p>Please contact us if you cannot find an answer to your question.</p>
+        </center>
+
+        <div class="container">
+            <div class="question" onclick="toggleAnswer(event)">
+                <h3>How much will my project cost?</h3>
+                <span class="arrow">▼</span>
+            </div>
+            <div class="answer">
+                <p>I will give estimates based on an hourly rate and on the common tasks required for your project. I will need more information about what you have and what I need before I can do that. Contact Me, and I will reply with an estimate of the time required and a suggested budget. </p>
+            </div>
+        
+            <div class="question" onclick="toggleAnswer(event)">
+                <h3>Who owns the finished design?</h3>
+                <span class="arrow">▼</span>
+            </div>
+            <div class="answer">
+                <p>My fees include licensing for all designs we create specifically for my clients. Licensing for all assets will be included in your invoice, and all documentation will be transferred to you after the final invoice is closed.</p>
+            </div>
+        
+            <div class="question" onclick="toggleAnswer(event)">
+                <h3>Can you do it right now?</h3>
+                <span class="arrow">▼</span>
+            </div>
+            <div class="answer">
+                <p>it is sometimes possible for me to do rush orders for an additional fee. Send me a message as soon as possible, and I will get back to you to let you know if I have space in my schedule for a rush order.</p>
+            </div>
+        </div>
+
+        <div class="cont">
+            <center>
+                <h1 style="color: gray;">Contact Me</h1>
+                <hr>
+            </center>
+
+            <div class="right">
+                <h2>Tell us more!</h2>
+
+                <p>Building visuals that communicate your message to the world is our passion. Let us know more about your business or project, and we will get back to you soon with new ideas on how you can communicate better with your customers.</p>
+
+                <h2>Melalew Mengistu</h2>
+
+                <img src="My.jpg" width="200px" style="border-radius: 50%;">
+            </div>
+
+            <div class="left">
+                <div class="container">
+                    <h1>Contact Me</h1>
+                    <form id="contact-form">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" name="username" required>
+            
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+            
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+            
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+            
+                        <button type="submit">Send Message</button>
+                        <div id="response-message"></div>
+                    </form>
+                </div>
+        </div>
+     <script src="script.js"></script>
+        <script>
+            function toggleAnswer(event) {
+    const questionElement = event.currentTarget;
+    const answerElement = questionElement.nextElementSibling;
+
+    // Toggle the display of the answer
+    if (answerElement.style.display === 'block') {
+        answerElement.style.display = 'none';
+    } else {
+        answerElement.style.display = 'block';
+    }
+
+    // Toggle the active class for arrow rotation
+    questionElement.classList.toggle('active');
+}
+
+        </script>
+    </div>
+    </body>
+    </html>

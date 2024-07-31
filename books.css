@@ -1,0 +1,110 @@
+body{
+    background: red;
+}
+.top{
+    padding: 5px;
+    background: black;
+    font-family: "arial", sans-serif;
+}
+.top h1{
+    color:white;  
+    margin-left: 60px;
+    user-select: none;
+    font-weight: 1000;
+}
+.form{
+    float: right;
+    margin-right: 40px;
+    margin-top: -45px;
+    word-spacing: 40px;
+}
+.form a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+}
+.form a:hover{
+    color: rgb(255, 255, 255);
+    background: blue;
+    border-radius: 50px;
+}
+.main{
+    margin-top: 20px;
+}
+.book{
+    display: inline-block;
+    border: 1px solid black;
+    width: 200px;
+    height: 180px;
+}
+.book p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.book img{
+    width: 200px;
+    height: 180px;
+}
+.book a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    background: green;
+    cursor: pointer;
+    color: white;
+}
+.book a:hover{
+    color: blue;
+}
+
+.me{
+    display: inline-block;
+    border: 1px solid black;
+    width: 200px;
+    height: 180px;
+    margin-top: 20px;
+}
+.me p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.me img{
+    width: 200px;
+    height: 180px;
+}
+.me a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    background: green;
+    cursor: pointer;
+    color: white;
+}
+.me a:hover{
+    color: blue;
+}
+
+.you{
+    display: inline-block;
+    border: 1px solid black;
+    width: 200px;
+    height: 180px;
+    margin-top: 20px;
+}
+.you p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.you img{
+    width: 200px;
+    height: 180px;
+}
+.you a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    background: green;
+    color: white;
+    cursor: pointer;
+}
+.you a:hover{
+    color: blue;
+}
